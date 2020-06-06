@@ -1,0 +1,68 @@
+.bovenvlak{
+    background-color: #36553e;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+}
+.text_midden{
+    margin: auto; /* Important */
+    text-align: center;
+    color: #cabdac;
+    font-weight: bold;
+    font-style: italic;
+}
+.fotoglr{
+    height: 150px;
+}
+.fotobox{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-30px);
+}
+.bg-course{
+    background-color: #e6e6e6;
+
+}
+.plaatje{
+    background-image: url("../img/glrLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+
+}
+.plaatje-container{
+    background-color: var(--vtslightgreen);
+    padding: 0.3rem;
+    display: flex;
+
+}
+@media (min-width: 768px) {
+    .plaatje-container{
+        padding: 0.5rem;
+    }
+}
+.h1_course{
+    color: #818181;
+    font-weight: bold;
+    font-style: italic;
+}
+.info_course{
+    color: #818181;
+}
+.rechts{
+    background-color: #cabcac;
+    height: 550px;
+}
+
+input[type=text] {
+    float: left;
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+
+}
+
+.main-dinges{
+    max-width: 1140px;
+}

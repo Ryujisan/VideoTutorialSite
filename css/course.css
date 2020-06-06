@@ -1,0 +1,49 @@
+/* content */
+#course-title {
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+
+/* side navigatie knoppen */
+#course-navigatie .btn {
+    border-radius: 0;
+}
+
+#course-navigatie .list-group-item:first-child {
+    border-radius: 0;
+}
+
+#course-navigatie .list-group-item:last-child {
+    border-radius: 0;
+}
+
+#course-navigatie .list-group-item:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25)
+}
+
+.hoofdstuk-actief, .hoofdstuk-actief:active {
+    color: var(--white) !important;
+    background-color: var(--vtsgreen) !important;
+}
+
+.hoofdstuk-actief:hover {
+    background-color: var(--vtsdarkgreen) !important;
+}
+
+.video-actief {
+    color: var(--white) !important;
+    background-color: var(--vtslightergreen) !important;
+}
+
+.video-actief::after {
+    content: " (actief)";
+}
+
+.video-select-btn {
+    transition: 
+        color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+}

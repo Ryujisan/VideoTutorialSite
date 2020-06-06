@@ -1,0 +1,66 @@
+.navbar .nav-link {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.navbar .nav-item {
+    position: relative;
+}
+
+.navbar .nav-item.active {
+    background-color: var(--vtsdarkgreen);
+}
+
+@media (min-width: 768px) {
+    .navbar .nav-item.active::after {
+        content: "";
+
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 30px;
+        bottom: -30px;
+
+        z-index: 1;
+
+        background-color: inherit;
+
+        -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+        clip-path: polygon(0 0, 50% 100%, 100% 0);
+
+        animation-name: expand;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(0.45, 0.55, 0.29, 0.94);
+        animation-fill-mode: forwards;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-item:not(:first-child) {
+        border-top: 1px solid var(--light);
+    }
+}
+
+@keyframes expand {
+    0% {
+        clip-path: polygon(0 0, 50% 0%, 100% 0);
+    }
+    25% {
+        clip-path: polygon(0 0, 50% 100%, 100% 0);
+    }
+    40% {
+        clip-path: polygon(0 0, 50% 40%, 100% 0);
+    }
+    60% {
+        clip-path: polygon(0 0, 50% 90%, 100% 0);
+    }
+    80% {
+        clip-path: polygon(0 0, 50% 60%, 100% 0);
+    }
+    100% {
+        clip-path: polygon(0 0, 50% 70%, 100% 0);
+    }
+}
